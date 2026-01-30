@@ -1,0 +1,7 @@
+code,symbol,minorUnit,name,descr
+INR,₹,2,Indian Rupee,Currency of India
+USD,$,2,US Dollar,Currency of United States
+EUR,€,2,Euro,European Union currency
+JPY,¥,0,Japanese Yen,Currency of Japan
+GBP,£,2,British Pound,Currency of United Kingdom
+AED,د.إ,2,Dirham,United Arab Emirates currency

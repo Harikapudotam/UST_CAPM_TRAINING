@@ -1,0 +1,6 @@
+ID,poNumber,PRType,Request_Description,supplier,orderDate,totalAmount,status
+PO001,PO-1001,Standard,Laptop procurement for IT team,Dell India,2025-01-10,75000.00,InProgress
+8e359dfb-2e91-4745-8ab1-41d9f826fc7f,PO-1002,Standard,Office furniture for new floor,IKEA India,2025-01-12,45000.00,InProgress
+8e359dfb-2e91-4745-8ab1-41d9f826fc7e,PO-1003,Urgent,Network equipment for data center,Cisco Systems,2025-01-15,120000.00,InProgress
+PO004,PO-1004,Standard,Stationery supplies for Q1,Staples India,2025-01-18,15000.00,InProgress
+PO005,PO-1005,Standard,Software licenses for developers,Microsoft India,2025-01-20,90000.00,InProgress

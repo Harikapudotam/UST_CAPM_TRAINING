@@ -1,0 +1,32 @@
+###
+
+post http://localhost:4004/odata/v4/MyService/approveOrder
+Content-Type: application/json
+
+{
+  "ID": "PO001"
+}
+
+###
+
+GET http://localhost:4004/odata/v4/MyService/getOrderTotal
+Content-Type: application/json
+
+{
+  "ID": ["8e359dfb-2e91-4745-8ab1-41d9f826fc7f","8c59d818-24c8-4952-9029-341f5d2164f9","PO004"]
+}
+
+###
+
+post http://localhost:4004/odata/v4/MyService/PurchaseOrder('8e359dfb-2e91-4745-8ab1-41d9f826fc7f')/sendforapproval
+Content-Type: application/json
+
+{
+  "ID": ["8e359dfb-2e91-4745-8ab1-41d9f826fc7f","8c59d818-24c8-4952-9029-341f5d2164f9","PO004"]
+}
+
+
+
+###
+
+GET http://localhost:4004/odata/v4/MyService/PurchaseOrder(ID='8e359dfb-2e91-4745-8ab1-41d9f826fc7f')/getTotal()

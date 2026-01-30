@@ -1,0 +1,64 @@
+POST http://localhost:4004/odata/v4/MyService/PurchaseOrder
+Content-Type: application/json
+
+{
+  "poNumber": "PO-2026-001",
+  "PRType": "STANDARD",
+  "Request_Description": "IT hardware procurement for new employees",
+  "supplier": "TechSource Solutions Pvt Ltd",
+  "orderDate": "2026-01-27",
+  "totalAmount": 418000,
+  "items": [
+    {
+      "itemNo": 10,
+      "material": "Laptop HP EliteBook",
+      "Material_Description": "HP EliteBook 840 G9 Business Laptop",
+      "PurOrg": "1000",
+      "Plant": "PL01",
+      "quantity": 4,
+      "UoM": "EA",
+      "UnitPrice": -90,
+      "Currency": {
+        "code": "INR"
+      },
+      "PurchasingGroup": "IT01"
+    },
+    {
+      "itemNo": 20,
+      "material": "USB-C Dock",
+      "Material_Description": "Dual Monitor USB-C Docking Station",
+      "PurOrg": "1000",
+      "Plant": "PL01",
+      "quantity": 2,
+      "UoM": "EA",
+      "UnitPrice": 14000,
+      "Currency": {
+        "code": "INR"
+      },
+      "PurchasingGroup": "IT01"
+    }
+  ]
+}
+
+###
+
+PATCH http://localhost:4004/odata/v4/MyService/PurchaseOrderItem('f4b09c9c-0613-4d40-9ff3-efae41a7b340')
+Content-Type: application/json
+
+{
+  
+}
+
+###
+
+PATCH  http://localhost:4004/odata/v4/MyService/PurchaseOrder('8e359dfb-2e91-4745-8ab1-41d9f826fc7f')
+Content-Type: application/json
+
+{
+  "Request_Description": "new request",
+  "orderDate": "2026-01-30"
+}
+
+###
+
+DELETE http://localhost:4004/odata/v4/MyService/PurchaseOrder('a840d972-93c7-4da6-bc55-b471045216da')/approve()
